@@ -40,4 +40,12 @@ conflicto para que seamos nosotros los que decidamos qué contenido es
 el que debemos dejar en el archivo. En nuestro caso, nos quedamos con 
 el contenido de que había en la rama **styled**.
 
+*El merge del paso 21, ¿Causó algún conflicto? ¿Po qué?
+
+No, este merge no causó ningún conflicto ya que ha sido un merge 
+Fast-foward, pues la rama **master** ya se encontraba incluída en la 
+rama **styled**, por que solamente se ha movido el puntero de la rama 
+**master** al último commit donde está el puntero de la rama 
+**styled**.
+
 

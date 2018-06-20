@@ -1,5 +1,5 @@
-# Práctica del curso de git, gitHub y Sourcetree
-### Ejercicio 1: Respuestas de las preguntas planteadas
+# Práctica del curso de git, gitHub y Sourcetreea
+### Ejercicio 1: Respuestas a las preguntas planteadas
 
 *Qué comando utlizaste en el paso 11? ¿Por qué?*
 
@@ -9,7 +9,7 @@ git reset --hard HEAD~1
 He utilizado el comando **git reset --hard HEAD~1** ya que con dicho 
 comando se consigue deshacer el último commit, es decir, mover la rama 
 **styled** al commit inmediatamente anterior y, además, elimina los 
-cambios que habíamos hecho anteriormente el en el working copy 
+cambios que habíamos hecho anteriormente en el working copy 
 (gracias al modificador --hard).
 
 
@@ -48,4 +48,74 @@ rama **styled**, por que solamente se ha movido el puntero de la rama
 **master** al último commit donde está el puntero de la rama 
 **styled**.
 
+*¿Qué comando o comandos utilizaste en el paso 25?*
+
+```
+git log --graph
+```
+He usado git --graph, también se pueden añadir modificadores para 
+mejorar la visibilidad del grafo como
+
+```
+git log --graph --decorate --pretty=online
+```
+
+*El merge del paso 26, ¿Podría ser fast foward? ¿Por qué?*
+
+Sí, podría ser un merge fast foward ya que la rama **title** solo está 
+un commit por arriba de la rama **master**, es decir, la rama master 
+ya se encontraba integrada en la rama **title**.
+
+*¿Qué comando o comandos utilizaste en el paso 27?*
+
+```
+git reset HEAD~1
+```
+Con este comando volvemos al commit anterior de la rama desde la que 
+hemos hecho el merge sin perder los cambios del working copy.
+
+*¿Qué comando o comandos utilizaste en el paso 28?*
+
+```
+git status
+git checkout -- git-nuestro.md
+```
+He usado primero un *git status* para consultar el estado del 
+repositorio y comprobar que el comando necesario para descartar los 
+cambios era *git checkout -- <archivo>*.
+
+*Qué comando o comandos utilizaste en el paso 29?*
+
+```
+git branch -D title
+````
+
+*¿Qué comando o comandos utilizaste en el paso 30?*
+
+```
+git reflog
+git reset --hard 0f7af3b
+```
+Primero he hecho un *git reflog* para ver el identificador del commit 
+donde habíamos realizado el merge y, después, he hecho un *git reset 
+--hard 0f7af3b* para volver a dicho commit.
+
+*¿Qué comando o comando utilizaste el el paso 32?*
+
+```
+git reflog
+git reset --hard c8b79aa
+```
+Primero un *git reflog* para ver el identificador del commit donde se 
+creó el poema y después un *git reset* a dicho commit, aquí no se 
+indicaba si tenía que ser --hard o no, pero yo lo puse --hard.
+
+*¿Qué comando o comando utilizaste en ele paso 33?*
+
+```
+git reflog
+git reset --hard 07af3b
+```
+Igual que antes, primero he hecho un *git reflog* y después un *git 
+reset --hard 07af3b* para volver al estado final.
 

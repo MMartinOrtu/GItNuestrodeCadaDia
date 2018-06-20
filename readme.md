@@ -30,3 +30,14 @@ del working copy tal y como estaban antes de deshacer el commit.
 No, no causó ningún clonflicto, ni siquiera ha llegado a realizarse el 
 merge ya que la rama **master** ya se encontraba integrada en la rama 
 **styled**, por lo que nos aparece el mensaje *already up-to-date*.
+
+*El merge del paso 19, ¿Causó algún conflicto? ¿Por qué?*
+
+Ŝí, en este merge surgió un conflicto ya que tanto en la rama 
+**styled** como en la rama **htnlify** habíamos modificados las mismas 
+líneas en ambas ramas, por lo que al hacer el merge git nos genera un 
+conflicto para que seamos nosotros los que decidamos qué contenido es 
+el que debemos dejar en el archivo. En nuestro caso, nos quedamos con 
+el contenido de que había en la rama **styled**.
+
+

@@ -25,3 +25,8 @@ anteriormente. A continuación, ejecuto **git reset --hard 20b3b82**
 para llevar la rama **styled** ha dicho commit devolviendo los cambios 
 del working copy tal y como estaban antes de deshacer el commit.
 
+*El merge del paso 13, ¿Causó algún conflicto?¿Por qué?*
+
+No, no causó ningún clonflicto, ni siquiera ha llegado a realizarse el 
+merge ya que la rama **master** ya se encontraba integrada en la rama 
+**styled**, por lo que nos aparece el mensaje *already up-to-date*.

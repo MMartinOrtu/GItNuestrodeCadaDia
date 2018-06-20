@@ -1,4 +1,4 @@
-# Git nuestro
+# El git nuestro de cada día
 *Git* nuestro que estas en los repos
 comprimidos sean tus *commits*
 venga a nosotros tu *log*
